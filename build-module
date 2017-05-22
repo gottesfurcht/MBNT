@@ -10,6 +10,6 @@ cp oikos.conf release/mods.d/
 cd release
 7z a ../oikos.zip .
 rm -rf ../release
-rm oikos.imp
+rm ../oikos.imp
 
 
