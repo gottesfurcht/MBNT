@@ -1,3 +1,5 @@
+(setq make-backup-files nil)
+
 (defun gnt-process-paragraph (chapter)
   (kill-whole-line)
   (push-mark)

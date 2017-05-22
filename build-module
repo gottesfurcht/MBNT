@@ -1,0 +1,15 @@
+#!/bin/bash
+
+emacs --batch --load gnt.el
+cat texts/*.imp > gnt.imp
+mkdir -p release/modules/texts/ztext/gnt
+mkdir -p release/mods.d
+imp2vs gnt.imp -z -o release/modules/texts/ztext/gnt
+rm release/modules/texts/ztext/gnt/ot.*
+cp gnt.conf release/mods.d/
+cd release
+7z a ../gnt.zip .
+rm -rf ../release
+rm gnt.imp
+
+
