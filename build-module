@@ -1,15 +1,15 @@
 #!/bin/bash
 
-emacs --batch --load oikos.el
-cat texts/*.imp > oikos.imp
-mkdir -p release/modules/texts/ztext/oikos
+emacs --batch --load myrio.el
+cat texts/*.imp > myrio.imp
+mkdir -p release/modules/texts/ztext/myrio
 mkdir -p release/mods.d
-imp2vs oikos.imp -z -o release/modules/texts/ztext/oikos
-rm release/modules/texts/ztext/oikos/ot.*
-cp oikos.conf release/mods.d/
+imp2vs myrio.imp -z -o release/modules/texts/ztext/myrio
+rm release/modules/texts/ztext/myrio/ot.*
+cp myrio.conf release/mods.d/
 cd release
-7z a ../oikos.zip .
+7z a ../myrio.zip .
 rm -rf ../release
-rm ../oikos.imp
+rm ../myrio.imp
 
 
