@@ -28,6 +28,7 @@
         (narrow-to-page))
       (forward-line)
       (delete-region (point) (point-max))
-      (write-file (concat book ".imp")))))
+      (write-file (expand-file-name (concat book ".imp"))))))
 
-(mapc 'gnt-convert (directory-files "." nil "^[0-9a-zA-z ]+\\.txt$"))
+(let ((default-directory (expand-file-name "texts")))
+  (mapc 'gnt-convert (directory-files "." nil "^[0-9a-zA-z ]+\\.txt$")))
