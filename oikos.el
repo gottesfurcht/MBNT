@@ -1,6 +1,6 @@
 (setq make-backup-files nil)
 
-(defun gnt-process-paragraph (chapter)
+(defun oikos-process-paragraph (chapter)
   (kill-whole-line)
   (push-mark)
   (forward-to-indentation)
@@ -14,7 +14,7 @@
     (replace-match (concat "\n$$$" book " " chapter ":\\1\n")))
   (narrow-to-page))
 
-(defun gnt-convert (file)
+(defun oikos-convert (file)
   (with-current-buffer (find-file-noselect file)
     (let* ((book (substring file 0 -4))
            (chapter-regex "Κεφάλαιο \\([0-9]+\\)")
@@ -26,11 +26,11 @@
           (progn (beginning-of-line)
                  (delete-region (point) (mark))
                  (while (re-search-forward chapter-regex nil t)
-                   (gnt-process-paragraph (match-string 1))))
-        (gnt-process-paragraph "1"))
+                   (oikos-process-paragraph (match-string 1))))
+        (oikos-process-paragraph "1"))
       (forward-line)
       (delete-region (point) (point-max))
       (write-file (expand-file-name (concat book ".imp"))))))
 
 (let ((default-directory (expand-file-name "texts")))
-  (mapc 'gnt-convert (directory-files "." nil "^[0-9a-zA-z ]+\\.txt$")))
+  (mapc 'oikos-convert (directory-files "." nil "^[0-9a-zA-z ]+\\.txt$")))

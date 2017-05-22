@@ -1,11 +1,10 @@
-# gnt
+# oikos
 
-Η Καινή Διαθήκη, the **G**reek **N**ew **T**estament or `gnt` SWORD Bible module (with accents)
+A Crosswire SWORD Bible module of the Greek New Testament (with accents) from the Greek House of the Bible
 
 Καινῆ Διαθήκη (τὸ Βυζαντινὸ κείμενο, ποὺ χρησιμοποιοῦμε καὶ στὶς ἀκολουθίες μας)  
-The New Testament (the Byzantine text, which we use in our services).
-
+The New Testament (the Byzantine text, which we use in our services).  
 Ἀπό τὸν Οίκο της Ελληνικής Βίβλου.  
-From the House of the Greek Bible.
+From the House of the Greek Bible.  
 
-Copy the module directory `gnt` to `~/.sword/modules/texts/ztext/` and the conf file `gnt.conf` to `~/.sword/mods.d/`
+Extract the zip file from the releases page and unzip it into your SWORD directory, e.g. `~/.sword`.
