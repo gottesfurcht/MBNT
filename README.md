@@ -1,6 +1,6 @@
 # myrio
 
-A Crosswire SWORD Bible module of the Greek New Testament (with accents) from Myriobiblos.org, home of the Greek the Bible
+A Crosswire SWORD Bible module with the Greek New Testament (including accents) from [myriobiblos.org](http://www.myriobiblos.gr/bible/), home of the Greek the Bible.
 
 Καινῆ Διαθήκη (τὸ Βυζαντινὸ κείμενο, ποὺ χρησιμοποιοῦμε καὶ στὶς ἀκολουθίες μας)  
 The New Testament (the Byzantine text, which we use in our services).  
