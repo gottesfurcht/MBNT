@@ -3,7 +3,7 @@
 # the command below was used to generate the imp files from the
 # txt files. regenerate these files, comment it in:
 # emacs --batch --load myrio.el
-cat texts/*.imp > myrio.imp
+rm -f myrio.zip
 mkdir -p release/modules/texts/ztext/myrio
 mkdir -p release/mods.d
 imp2vs myrio.imp -z -o release/modules/texts/ztext/myrio
@@ -12,6 +12,5 @@ cp myrio.conf release/mods.d/
 cd release
 7z a ../myrio.zip .
 rm -rf ../release
-rm ../myrio.imp
 
 
