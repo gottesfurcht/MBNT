@@ -6,7 +6,7 @@
 rm -f myrio.zip
 mkdir -p release/modules/texts/ztext/myrio
 mkdir -p release/mods.d
-imp2vs myrio.imp -z -o release/modules/texts/ztext/myrio
+imp2vs myrio.imp -z -v Orthodox -o release/modules/texts/ztext/myrio
 rm release/modules/texts/ztext/myrio/ot.*
 cp myrio.conf release/mods.d/
 cd release
