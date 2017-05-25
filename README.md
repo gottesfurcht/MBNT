@@ -8,3 +8,7 @@ The New Testament (the Byzantine text, which we use in our services).
 From the home of the Greek Bible.  
 
 Extract the zip file from the releases page and unzip it into your SWORD directory, e.g. `~/.sword`.
+
+For applications that support SWORD modules, see: http://crosswire.org/applications/
+
+On Android you can use the module with [And-bible](http://mjdenham.github.io/and-bible/). Download the zip file and select load the module with `Load Document from Zip` in the `Administration` menu.
