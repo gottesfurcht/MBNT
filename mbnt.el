@@ -1,6 +1,6 @@
 (setq make-backup-files nil)
 
-(defun myrio-process-paragraph (chapter)
+(defun mbnt-process-paragraph (chapter)
   (kill-whole-line)
   (push-mark)
   (forward-to-indentation)
@@ -14,7 +14,7 @@
     (replace-match (concat "\n$$$" book " " chapter ":\\1\n")))
   (narrow-to-page))
 
-(defun myrio-convert (file)
+(defun mbnt-convert (file)
   (with-current-buffer (find-file-noselect file)
     (let* ((book (substring file 0 -4))
            (chapter-regex "Κεφάλαιο \\([0-9]+\\)")
@@ -26,11 +26,11 @@
           (progn (beginning-of-line)
                  (delete-region (point) (mark))
                  (while (re-search-forward chapter-regex nil t)
-                   (myrio-process-paragraph (match-string 1))))
-        (myrio-process-paragraph "1"))
+                   (mbnt-process-paragraph (match-string 1))))
+        (mbnt-process-paragraph "1"))
       (forward-line)
       (delete-region (point) (point-max))
       (write-file (expand-file-name (concat book ".imp"))))))
 
 (let ((default-directory (expand-file-name "texts")))
-  (mapc 'myrio-convert (directory-files "." nil "^[0-9a-zA-z ]+\\.txt$")))
+  (mapc 'mbnt-convert (directory-files "." nil "^[0-9a-zA-z ]+\\.txt$")))

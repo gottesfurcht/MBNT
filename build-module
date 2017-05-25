@@ -2,15 +2,13 @@
 
 # the command below was used to generate the imp files from the
 # txt files. regenerate these files, comment it in:
-# emacs --batch --load myrio.el
-rm -f myrio.zip
-mkdir -p release/modules/texts/ztext/myrio
+# emacs --batch --load mbnt.el
+rm -f mbnt.zip
+mkdir -p release/modules/texts/ztext/mbnt
 mkdir -p release/mods.d
-imp2vs myrio.imp -z -v Orthodox -o release/modules/texts/ztext/myrio
-rm release/modules/texts/ztext/myrio/ot.*
-cp myrio.conf release/mods.d/
+imp2vs mbnt.imp -z -v Orthodox -o release/modules/texts/ztext/mbnt
+rm release/modules/texts/ztext/mbnt/ot.*
+cp mbnt.conf release/mods.d/
 cd release
-7z a ../myrio.zip .
+7z a ../mbnt.zip .
 rm -rf ../release
-
-
