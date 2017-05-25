@@ -1,4 +1,4 @@
-# **M**yrio**b**iblos **N**ew **T**estament
+# Myriobiblos New Testament
 
 A Crosswire SWORD Bible module with the Greek New Testament (including accents) from [myriobiblos.org](http://www.myriobiblos.gr/bible/), home of the Greek the Bible.
 
