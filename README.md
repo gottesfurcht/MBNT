@@ -11,4 +11,4 @@ Extract the zip file from the releases page and unzip it into your SWORD directo
 
 For applications that support SWORD modules, see: http://crosswire.org/applications/
 
-On Android you can use the module with [And-bible](http://mjdenham.github.io/and-bible/). Download the zip file and select load the module with `Load Document from Zip` in the `Administration` menu.
+On Android you can use the module with [And-bible](http://mjdenham.github.io/and-bible/). Download the zip file and install the module by selecting the zip file with `Load Document from Zip` from the `Administration` menu.
