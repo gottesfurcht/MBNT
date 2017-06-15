@@ -7,6 +7,8 @@ The New Testament (the Byzantine text, which we use in our services).
 Ἀπό τὸν Οίκο της Ελληνικής Βίβλου.  
 From the home of the Greek Bible.  
 
+Upon investigation I found that this text of the New Testament from the Greek Church is very similar to the Textus Receptus, which kind of surprised me because I had assumed that the Greeks would use what is called the "Byzantine" text in the academic world. But the Byzantine text (which is also called the Majority text) differs in quite a few places from both the Textus Receptus and the MBNT. I trust that the MBNT has been faithfully transmitted through the ages and might be close to the original text of the New Testament.
+
 Extract the zip file from the releases page and unzip it into your SWORD directory, e.g. `~/.sword`.
 
 For applications that support SWORD modules, see: http://crosswire.org/applications/
